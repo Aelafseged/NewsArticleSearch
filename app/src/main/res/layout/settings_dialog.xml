@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Date"
+        android:id="@+id/txtViewBeginDate"
+        android:layout_alignParentTop="true"
+        android:textColor="#21f3a4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/list_item_spacing"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDateBeginPicker"
+        android:layout_below="@+id/txtViewBeginDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/list_item_spacing"
+        android:text="Date Begin Picker"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:id="@+id/txtViewEndDate"
+        android:layout_below="@+id/btnDateBeginPicker"
+        android:textColor="#21f3a4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/list_item_spacing"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDateEndPicker"
+        android:layout_below="@+id/txtViewEndDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/list_item_spacing"
+        android:text="Date End Picker"/>-->
+
+    <TextView
+        android:layout_below="@+id/btnDateBeginPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewSortOrder"
+        android:text="Sort Order"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/list_item_spacing"
+        android:textColor="#21f3a4"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewSortOrder"
+        android:id="@+id/spnrSettings"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/order"
+        android:layout_marginBottom="@dimen/list_item_spacing"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnrSettings"
+        android:text="News Desk Values"
+        android:id="@+id/txtViewNewsDesk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/list_item_spacing"
+        />
+
+    <CheckBox
+        android:id="@+id/chkArts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/txtViewNewsDesk"
+        android:layout_alignLeft="@+id/chkFashion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/list_item_spacing"
+        android:text="Arts" />
+
+    <CheckBox
+        android:layout_below="@+id/chkArts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fashion &amp; Style "
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/list_item_spacing"
+        android:id="@+id/chkFashion"
+        />
+    <CheckBox
+        android:layout_below="@+id/chkFashion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignLeft="@+id/chkFashion"
+        android:text="Sports"
+        android:id="@+id/chkSports"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/list_item_spacing"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkSports"
+        android:text="Done"
+        android:id="@+id/btnSettings"
+        android:layout_centerHorizontal="true"
+
+    />
+
+</RelativeLayout>
