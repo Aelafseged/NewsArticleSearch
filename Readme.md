@@ -41,7 +41,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-<a href='http://i.imgur.com/Eo0mNao.gifv'>Direct Gif</a>
+<a href='http://i.imgur.com/Eo0mNao.gifv'>Click here to Watch Video Walkthrough</a>
+</br>
 <img src='http://i.imgur.com/Eo0mNao.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
