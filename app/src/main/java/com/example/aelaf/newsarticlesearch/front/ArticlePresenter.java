@@ -35,7 +35,7 @@ public class ArticlePresenter implements Presenter{
 
     @Override
     public void loadArticleList(String query) {
-        List<DocsItem> docsItemList = new ArrayList<>();
+      /*  List<DocsItem> docsItemList = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             DocsItem doc = new DocsItem();
             doc.setWeb_url("http://1.1.1.1");
@@ -56,9 +56,9 @@ public class ArticlePresenter implements Presenter{
             doc.setSnippet("Gson based -Snow white Snippet");
            docsItemList.add(doc) ;
            mActivity.showArticlesLists(docsItemList);
-        }
+        }*/
 
-     /*   mNetworkFetch.articleListFetch(query, new Network.GetNetworkArticleList() {
+        mNetworkFetch.articleListFetch(query, new Network.GetNetworkArticleList() {
             @Override
             public void onArticleListFound(List<DocsItem> docsItemList) {
                 mActivity.showArticlesLists(docsItemList);
@@ -68,7 +68,7 @@ public class ArticlePresenter implements Presenter{
             public void onArticleListNotFound() {
             mActivity.showNoArticleList();
             }
-        });*/
+        });
     }
 
     @Override
